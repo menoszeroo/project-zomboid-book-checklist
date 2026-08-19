@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Ediciones</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #2b2b2b; color: #fff; padding: 20px; }
+        .contenedor { max-width: 700px; margin: 0 auto; background: #3d3d3d; padding: 20px; border-radius: 8px; }
+        ul { list-style-type: none; padding: 0; }
+        
+        li { 
+            background: #4a4a4a; 
+            margin-bottom: 10px; 
+            border-radius: 4px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .libro-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            flex: 1; 
+        }
+
+        .libro-icono {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+
+        .titulo-libro { font-size: 1.1em; font-weight: bold; }
+        
+        .ediciones-container { 
+            display: flex; 
+            gap: 15px; 
+            padding: 15px; 
+        }
+        
+        .edicion-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8em;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] { width: 18px; height: 18px; margin-top: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Libros</h1>
+        <ul id="listaLibros">
+            <!-- LISTA -->
+        </ul>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

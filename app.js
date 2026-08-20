@@ -48,6 +48,8 @@ const MAX_EDICIONES = 5;
 
 const ul = document.getElementById('listaLibros');
 
+catalogo.sort((a, b) => a.titulo.localeCompare(b.titulo));
+
 catalogo.forEach((libro, indexLibro) => {
     const li = document.createElement('li');
     

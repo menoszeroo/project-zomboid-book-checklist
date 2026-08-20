@@ -51,6 +51,28 @@
         }
 
         input[type="checkbox"] { width: 18px; height: 18px; margin-top: 5px; cursor: pointer; }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                padding: 10px;
+            }
+            li {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            .libro-info {
+                justify-content: center; 
+                width: 100%; 
+                box-sizing: border-box;
+            }
+            .ediciones-container {
+                justify-content: center;
+                flex-wrap: wrap; 
+                gap: 20px; 
+                padding: 10px 15px 20px 15px; 
+                width: 100%;
+                box-sizing: border-box;
+            }
     </style>
 </head>
 <body>
